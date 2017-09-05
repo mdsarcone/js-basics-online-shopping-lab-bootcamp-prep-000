@@ -24,7 +24,12 @@ function viewCart() {
   }
   var itemsAndPrices = []
   for (var i = 0; i < cart.length; i++) {
-    itemsAndPrices.push('${cart[i].key} at $${cart.}')
+    if (i === cart.length - 1) {
+      itemsAndPrices.push('and ' + ${cart[i].key} + ' at $' + ${cart.})
+    }  
+    else {
+      itemsAndPrices.push(${cart[i].key} + ' at $' + ${cart.})
+    }
   }
   console.log('In your cart, you have '+ itemsAndPrices.join(', ') + '.')
   return cart
