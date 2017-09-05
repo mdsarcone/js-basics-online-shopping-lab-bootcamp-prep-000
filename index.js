@@ -26,7 +26,8 @@ function viewCart() {
   for (var i = 0; i < cart.length; i++) {
     itemsAndPrices.push('${cart[i].key} at $${cart.}')
   }
-  return "In your cart, you have ${itemsAndPrices.join(', ')}."
+  console.log('In your cart, you have '+ ${itemsAndPrices.join(', ')}'.')
+  return cart
 }
 
 
