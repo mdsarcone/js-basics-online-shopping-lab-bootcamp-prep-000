@@ -26,7 +26,7 @@ function viewCart() {
   for (var i = 0; i < cart.length; i++) {
     if (i === cart.length - 1) {
       itemsAndPrices.push('and ' + ${cart[i].key} + ' at $' + ${cart.})
-    }  
+    }
     else {
       itemsAndPrices.push(${cart[i].key} + ' at $' + ${cart.})
     }
