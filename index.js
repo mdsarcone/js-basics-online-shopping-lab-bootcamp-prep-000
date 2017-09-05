@@ -42,7 +42,8 @@ function total() {
 
 function removeFromCart(item) {
   if (!item) {
-    return 'That item is not in your cart.'
+    console.log('That item is not in your cart.')
+    return cart
   }
   var eachItem = new Object()
   for (var i = 0; i < cart.length; i++) {
