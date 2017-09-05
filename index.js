@@ -24,8 +24,10 @@ function viewCart() {
   }
   var itemsAndPrices = []
   for (var i = 0; i < cart.length; i++) {
+    var eachItem = new Object()
+    eachItem = cart[i]
     if (i === cart.length - 1) {
-      itemsAndPrices.push('and ' + ${cart[i].key} + ' at $' + ${cart.})
+      itemsAndPrices.push('and ' + Object.keys(eachItem) + ' at $' + ${cart.})
     }
     else {
       itemsAndPrices.push(${cart[i].key} + ' at $' + ${cart.})
